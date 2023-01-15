@@ -1,0 +1,146 @@
+.profileScreen {
+    height: 100vh;
+    width: 100vw;
+    color: white;
+}
+
+.profileScreen__body {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+}
+
+.profileScreen__info {
+    display: flex;
+}
+
+.profileScreen__body > h1 {
+    font-size: 60px;
+    font-weight: 400;
+    border-bottom: 1px solid #282c2d;
+    margin-bottom: 20px;
+}
+
+.profileScreen__details {
+    color: white;
+    margin-left: 25px;
+    flex: 1;
+}
+
+.profileScreen__details > h2 {
+    background-color:grey;
+    padding: 15px;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+
+.profileScreen__signout {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 5%;
+    width: 100%;
+    color: #fff;
+    background-color: #e50914;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.profileScreen__signout:hover{
+    background-color: #c2060f;
+}
+
+.profileScreen__info > img {
+    height: 100px;
+}
+
+.profileScreen__plans > h3 {
+    border-bottom: 1px solid #282c2d;
+    padding-bottom:10px ;
+    padding-top: 10px;
+}
+
+.plan {
+    margin-top: 20px;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name_info > h5{
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.plan_3 > .name_info > h5{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.plan > button {
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-weight: .8rem;
+    font-weight: 600;
+    color: white;
+    background: #cf0711d7;
+}
+
+.plan_3 >  button {
+    background: none;
+}
+
+.plan_3 > .name_info {
+    padding-left: 5px;
+}
+
+.plan_3{
+    padding: 5px;
+    background:rgba(75, 73, 73, 0.884);
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .profileScreen__body {
+        padding: 50px 20px;
+        
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .profileScreen__body > h1 {
+        font-size: 30px;
+
+    }
+
+    .profileScreen  {
+        height: auto;
+        min-height: 100vh;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 340px) {
+    .profileScreen__info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .profileScreen {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
